@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" />
+		<link rel="stylesheet" type="text/css" href="css/Preset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="w950 flex flex-pack-justify flex-align-center">
+				<a href="" class="logo">
+					<img src="img/logo.png">
+				</a>
+				<div class="menu">
+					<a href="">团队简介</a>
+					<a href="">资源优势</a>
+					<a href="" class="active">业务范围</a>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img/banner.png"></div>
+				<div class="swiper-slide"><img src="img/banner.png"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<div class="part part1">
+			<div class="w950">
+				<img src="img/part.png" />
+				<div class="txt">
+					<div class="clearfix">
+						<div class="name">
+							<div class="subtitle">技术服务中心</div>
+							<div>助力信息化软件开发 互联网+应用</div>
+						</div>
+						<div class="telphone">
+							<i></i>
+							<span>137-1234-4321</span>
+						</div>
+					</div>
+					<div class="nums flex flex-align-center flex-pack-justify">
+						<div>
+							<div class="num">
+								<span>12</span>+
+							</div>
+							<div>行业经验</div>
+						</div>
+						<div>
+							<div class="num">
+								<span>12</span>+
+							</div>
+							<div>行业系统</div>
+						</div>
+						<div>
+							<div class="num">
+								<span>12</span>+
+							</div>
+							<div>服务范围</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="part part2">
+			<div class="w950">
+				<div class="title">
+					我们能做什么?
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="w950">
+				<div class="title">联系我们</div>
+				<div>
+					<i class="icon1"></i>
+					<span>公众号：whyuntu </span>
+				</div>
+				<div class="mt15">
+					<i class="icon2"></i>
+					<span>公众号：whyuntu </span>
+				</div>
+			</div>
+			<div class="copyright">Copyright 2016 www.yuntuok.com All Rights Reserved</div>
+		</div>
+	</body>
+</html>
+<script src="js/swiper.min.js"></script>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		pagination: {
+			el: '.swiper-pagination',
+		},
+	});
+</script>

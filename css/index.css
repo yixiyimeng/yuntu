@@ -1,0 +1,196 @@
+.w950 {
+	width: 950px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mt15 {
+	margin-top: 15px;
+}
+
+.header {
+	background: #46a3ff;
+	height: 80px;
+	border-bottom: 1px solid #3a8dee;
+	position: relative;
+}
+
+.header::after {
+	content: '';
+	display: block;
+	height: 1px;
+	background: #95c1ff;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	right: 0;
+}
+
+.header>div {
+	height: 100%;
+}
+
+.header .menu a {
+	color: #fff;
+	font-size: 24px;
+	height: 80px;
+	display: inline-block;
+	line-height: 80px;
+	position: relative;
+}
+
+.header .menu a+a {
+	margin-left: 45px;
+}
+
+.header .menu a.active::after {
+	content: '';
+	display: block;
+	height: 5px;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	background: #fff;
+}
+
+.logo {}
+
+.banner img {
+	display: block;
+	width: 100%;
+}
+
+.part.part1 {
+	position: relative;
+	width: 100%;
+	margin-top: 55px;
+	padding-bottom: 120px;
+}
+
+.part.part1 .w950 {
+	position: relative;
+
+}
+
+.part.part1 img {
+	display: block;
+	width: 100%;
+}
+
+.part.part1 .txt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: #fff;
+	padding: 40px 70px;
+	font-size: 24px;
+}
+
+.part.part1 .txt .subtitle {
+	font-size: 30px;
+}
+
+.part.part1 .txt .name {
+	float: left;
+	position: relative;
+	padding-left: 15px;
+}
+
+.part.part1 .txt .name::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 4px;
+	background: #fff;
+	top: 5px;
+	bottom: 5px;
+}
+
+.part.part1 .txt .telphone {
+	float: right;
+	font-size: 48px;
+}
+
+.part.part1 .txt .telphone i {
+	display: inline-block;
+	width: 36px;
+	height: 47px;
+	background: url(../img/telphone.png) no-repeat center center;
+	background-size: contain;
+}
+
+.part.part1 .txt .telphone i,
+.part.part1 .txt .telphone span {
+	vertical-align: middle;
+}
+
+.part.part1 .txt .nums {
+	text-align: center;
+	font-size: 24px;
+	margin-top: 130px;
+
+}
+
+.part.part1 .txt .nums .num {
+	font-size: 40px;
+}
+
+.part.part1 .txt .nums .num span {
+	font-size: 93px;
+	vertical-align: top;
+	line-height: 90px;
+}
+
+.part .title {
+	color: #2a86dd;
+	font-size: 30px;
+	text-align: center;
+}
+
+.footer {
+	background: #fff;
+	text-align: center;
+	color: #666;
+	padding: 50px 0 30px;
+	font-size: 24px;
+}
+
+.footer .w950 {
+	padding-left: 120px;
+	text-align: left;
+}
+
+.footer .title {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+.footer i {
+	height: 30px;
+	width: 30px;
+	background: no-repeat center center;
+	background-size: contain;
+	display: inline-block;
+}
+
+.footer i.icon1 {
+	background-image: url(../img/wechat.png);
+}
+
+.footer i.icon2 {
+	background-image: url(../img/qq.png);
+}
+
+.footer i,
+.footer span {
+	vertical-align: middle;
+}
+
+.footer .copyright {
+	font-size: 20px;
+	margin-top: 80px;
+}
