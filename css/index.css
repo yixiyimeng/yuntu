@@ -3,6 +3,16 @@
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	overflow: hidden;
+}
+
+.bg-grey {
+	background: #f7f7f7;
+}
+
+.imgbox img {
+	display: block;
+	width: 100%;
 }
 
 .mt15 {
@@ -62,10 +72,13 @@
 	width: 100%;
 }
 
+.part {
+	padding-top: 60px;
+}
+
 .part.part1 {
 	position: relative;
 	width: 100%;
-	margin-top: 55px;
 	padding-bottom: 120px;
 }
 
@@ -149,8 +162,231 @@
 	color: #2a86dd;
 	font-size: 30px;
 	text-align: center;
+	position: relative;
 }
 
+.part .title i {
+	height: 14px;
+	width: 14px;
+	background: #2a86dd;
+	display: inline-block;
+	border-radius: 100%;
+	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+
+.part .title i.dot-l {
+	left: 333px;
+}
+
+.part .title i.dot-r {
+	right: 333px;
+}
+
+.part .title span {
+
+	margin: 0 20px;
+	vertical-align: middle;
+}
+
+.part .title:before,
+.part .title:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 1px;
+	background: #2a86dd;
+	top: 50%;
+	width: 333px;
+}
+
+.part .title.white-title:before,
+.part .title.white-title:after {
+	background: #fff;
+}
+
+.part .title.white-title {
+	color: #fff;
+}
+
+.part .title.white-title i {
+	background: #fff;
+}
+
+.part .title:before {
+	left: 0;
+}
+
+.part .title:after {
+	right: 0;
+}
+
+.part2 .category {
+	position: relative;
+	margin: 70px 0;
+}
+
+.part2 .category i {
+	background: #ddd;
+	position: absolute;
+}
+
+.part2 .category .item {
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	color: #666;
+	font-size: 24px;
+	padding: 50px 0;
+}
+
+.part3 .schemelist {
+	overflow: hidden;
+	margin: 70px -10px 80px;
+}
+
+.part3 .schemelist .item {
+	float: left;
+	width: 25%;
+	text-align: center;
+	font-size: 24px;
+	color: #666;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.part3 .schemelist .item .imgbox {
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	margin-bottom: 45px;
+}
+
+.part3 .schemelist .item .imgbox img {
+	border-radius: 20px;
+}
+
+.part4 {
+	background: url(../img/bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.part4 .step {
+	margin: 50px 20px;
+}
+
+#certify {
+	position: relative;
+	width: 100%;
+	/*判断宽度设置响应式效果*/
+	margin: 0 auto
+}
+
+#certify .swiper-container {
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+#certify .swiper-slide {
+	width: 756px;
+	height: 594px;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+	padding: 0 36px 70px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+#certify .swiper-slide img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+#certify .swiper-slide p {
+	line-height: 90px;
+	color: #666;
+	font-size: 24px;
+	padding-left: 90px;
+}
+
+#certify .swiper-pagination {
+	width: 100%;
+	bottom: 20px;
+}
+
+#certify .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 5px;
+	border: 3px solid #fff;
+	background-color: #d5d5d5;
+	width: 10px;
+	height: 10px;
+	opacity: 1;
+}
+
+#certify .swiper-pagination-bullets .swiper-pagination-bullet-active {
+	border: 3px solid #00aadc;
+	background-color: #fff;
+}
+
+#certify .swiper-button-prev {
+	left: 140px;
+	width: 60px;
+	height: 111px;
+	top: 133px;
+	background: url(../images/lunbo_17.png) no-repeat;
+
+	background-size: 100%;
+}
+
+#certify .swiper-button-prev:hover {
+	/*background-position: 0 -46px;*/
+	/*background-size: 100%*/
+}
+
+#certify .swiper-button-next {
+	right: 140px;
+	width: 60px;
+	height: 111px;
+	top: 133px;
+	background: url("../images/lunbo_20.png") no-repeat;
+
+	background-size: 100%;
+}
+
+#certify .swiper-button-next:hover {
+	/*background-position: 0 -139px;*/
+	/*background-size: 100%*/
+}
+
+.casetitle {
+	font-size: 30px;
+	color: #666;
+	text-align: center;
+}
+
+.casebox .tab .tab-hd {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.casebox .tab .tab-hd a {
+	display: inline-block;
+	font-size: 24px;
+	color: #666;
+	line-height: 43px;
+	padding: 0 18px;
+	border-radius: 50px;
+}.casebox .tab .tab-hd a+a{
+	margin-left: 50px;
+}
+.casebox .tab .tab-hd a.active{
+	color: #fff;
+	background: #2895e6;
+}
 .footer {
 	background: #fff;
 	text-align: center;

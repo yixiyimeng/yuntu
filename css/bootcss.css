@@ -1,0 +1,31 @@
+/* 响应式 */
+@media screen and (max-width: 768px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 900px) {
+	.part2 .category i.line1,
+	.part2 .category i.line2{
+		top: 0;
+		bottom: 0;
+		width: 1px;
+	}
+	.part2 .category i.line1{
+		left: 33.33%;
+	}
+	.part2 .category i.line2{
+		right: 33.33%;
+	}
+	.part2 .category i.line3,
+	.part2 .category i.line4{
+		left: 0;
+		right: 0;
+		height: 1px;
+	}
+	.part2 .category i.line3{
+		top: 33.33%;
+	}
+	.part2 .category i.line4{
+		bottom: 33.33%;
+	}
+}
