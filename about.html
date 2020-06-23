@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>关于我们</title>
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" />
+		<link rel="stylesheet" type="text/css" href="css/Preset.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootcss.css" />
+	</head>
+	<body>
+		<div class="header fixed">
+			<div class="w1210 flex flex-pack-justify flex-align-center">
+				<a href="" class="logo">
+					<img src="img/logo.png">
+				</a>
+				<div class="menu hidden-sm">
+					<a href="">team简介</a>
+					<a href="">项目实践</a>
+					<a href="" class="active">业务范围</a>
+					<a href="./contact.html">解决方案</a>
+				</div>
+				<div class="menubtn visible-sm"></div>
+			</div>
+		</div>
+		<div id="navbar" class="navbar">
+			<a href="javascript:;" class="close">×</a>
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="./index.html" class="active">首页</a>
+				</li>
+				<li>
+					<a href="./about.html">team简介</a>
+				</li>
+				<li>
+					<a href="./project.html">项目实践</a>
+				</li>
+				<li>
+					<a href="./news.html">业务范围</a>
+				</li>
+				<li>
+					<a href="./contact.html">解决方案</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main about-pageview">
+			<div class="bread w1210">
+				<a href="">首页</a>
+				<span>&gt;</span>
+				<span>Team简介</span>
+			</div>
+			<div class="grid w1210">
+				<div class="submenu">
+					<ul>
+						<li>
+							<a href="javascript:;">team简介</a>
+						</li>
+						<li>
+							<a href="javascript:;">项目实践</a>
+						</li>
+						<li>
+							<a href="javascript:;">业务范围</a>
+						</li>
+						<li>
+							<a href="javascript:;">解决方案</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="w950">
+				<div class="title">联系我们</div>
+				<div>
+					<i class="icon1"></i>
+					<span>公众号：whyuntu </span>
+				</div>
+				<div class="mt15">
+					<i class="icon2"></i>
+					<span>公众号：whyuntu </span>
+				</div>
+			</div>
+			<div class="copyright">Copyright 2016 www.yuntuok.com All Rights Reserved</div>
+		</div>
+	</body>
+</html>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	var swiper = new Swiper('.banner.swiper-container', {
+		pagination: {
+			el: '.swiper-pagination',
+		},
+	});
+	var modify = 0;
+	var swiper2 = certifySwiper = new Swiper('#certify .swiper-container', {
+		watchSlidesProgress: true,
+		slidesPerView: 'auto',
+		centeredSlides: true,
+		loop: true,
+		loopedSlides: 5,
+		autoplay: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+		on: {
+			progress: function(progress) {
+				for (i = 0; i < this.slides.length; i++) {
+					var slide = this.slides.eq(i);
+					var slideProgress = this.slides[i].progress;
+
+					if (Math.abs(slideProgress) > 1) {
+						modify = (Math.abs(slideProgress) - 1) * 0.4 + 1;
+					}
+					translate = slideProgress * modify * 318 + 'px';
+					scale = 1 - Math.abs(slideProgress) / 5;
+					zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+					slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+					slide.css('zIndex', zIndex);
+					slide.css('opacity', 1);
+					if (Math.abs(slideProgress) > 3) {
+						slide.css('opacity', 0);
+					}
+				}
+			},
+			setTransition: function(transition) {
+				for (var i = 0; i < this.slides.length; i++) {
+					var slide = this.slides.eq(i)
+					slide.transition(transition);
+				}
+
+			}
+		}
+
+	})
+</script>

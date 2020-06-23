@@ -10,204 +10,229 @@
 		<link rel="stylesheet" type="text/css" href="css/bootcss.css" />
 	</head>
 	<body>
-		<div class="header">
+		<div class="header fixed">
 			<div class="w950 flex flex-pack-justify flex-align-center">
 				<a href="" class="logo">
 					<img src="img/logo.png">
 				</a>
-				<div class="menu">
+				<div class="menu hidden-sm">
 					<a href="">团队简介</a>
 					<a href="">资源优势</a>
 					<a href="" class="active">业务范围</a>
 				</div>
+				<div class="menubtn visible-sm"></div>
 			</div>
 		</div>
-		<div class="swiper-container banner">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide"><img src="img/banner.png"></div>
-				<div class="swiper-slide"><img src="img/banner.png"></div>
-			</div>
-			<div class="swiper-pagination"></div>
+		<div id="navbar" class="navbar">
+			<a href="javascript:;" class="close">×</a>
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="./index.html" class="active">首页</a>
+				</li>
+				<li>
+					<a href="./about.html">关于我们</a>
+				</li>
+				<li>
+					<a href="./project.html">产品中心</a>
+				</li>
+				<li>
+					<a href="./news.html">新闻中心</a>
+				</li>
+				<li>
+					<a href="./contact.html">联系我们</a>
+				</li>
+			</ul>
 		</div>
-		<!-- 技术服务中心 -->
-		<section class="part part1">
-			<div class="w950">
-				<img src="img/part.png" />
-				<div class="txt">
-					<div class="clearfix">
-						<div class="name">
-							<div class="subtitle">技术服务中心</div>
-							<div>助力信息化软件开发 互联网+应用</div>
+		<div class="main">
+			<div class="swiper-container banner">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="img/banner.png"></div>
+					<div class="swiper-slide"><img src="img/banner.png"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- 技术服务中心 -->
+			<section class="part part1">
+				<div class="w950">
+					<img src="img/part.png" />
+					<div class="txt">
+						<div class="clearfix">
+							<div class="name">
+								<div class="subtitle">技术服务中心</div>
+								<div>助力信息化软件开发 互联网+应用</div>
+							</div>
+							<div class="telphone">
+								<i></i>
+								<span>137-1234-4321</span>
+							</div>
 						</div>
-						<div class="telphone">
-							<i></i>
-							<span>137-1234-4321</span>
+						<div class="nums flex flex-align-center flex-pack-justify">
+							<div>
+								<div class="num">
+									<span>12</span>+
+								</div>
+								<div>行业经验</div>
+							</div>
+							<div>
+								<div class="num">
+									<span>12</span>+
+								</div>
+								<div>行业系统</div>
+							</div>
+							<div>
+								<div class="num">
+									<span>12</span>+
+								</div>
+								<div>服务范围</div>
+							</div>
 						</div>
 					</div>
-					<div class="nums flex flex-align-center flex-pack-justify">
-						<div>
-							<div class="num">
-								<span>12</span>+
-							</div>
-							<div>行业经验</div>
+
+				</div>
+			</section>
+			<!-- 我们能做什么 -->
+			<section class="part part2 bg-grey">
+				<div class="w950">
+					<div class="title">
+						<i class="dot-l"></i>
+						<span>我们能做什么?</span>
+						<i class="dot-r"></i>
+					</div>
+					<div class="category clearfix">
+						<i class="line1"></i>
+						<i class="line2"></i>
+						<i class="line3"></i>
+						<i class="line4"></i>
+						<div class="item">
+							<img src="img/icon1.png" alt="">
+							<p>医护智能语音系统</p>
 						</div>
-						<div>
-							<div class="num">
-								<span>12</span>+
-							</div>
-							<div>行业系统</div>
+						<div class="item">
+							<img src="img/icon2.png" alt="">
+							<p>企业IM系统</p>
 						</div>
-						<div>
-							<div class="num">
-								<span>12</span>+
+						<div class="item">
+							<img src="img/icon3.png" alt="">
+							<p>电子政务系统</p>
+						</div>
+						<div class="item">
+							<img src="img/icon4.png" alt="">
+							<p>电信业务系统</p>
+						</div>
+						<div class="item">
+							<img src="img/icon5.png" alt="">
+							<p>旅游行业订取票系统</p>
+						</div>
+						<div class="item">
+							<img src="img/icon6.png" alt="">
+							<p>保险理赔系统</p>
+						</div>
+						<div class="item">
+							<img src="img/icon7.png" alt="">
+							<p>社区系统</p>
+						</div>
+						<div class="item">
+							<img src="img/icon8.png" alt="">
+							<p>房产行业售房系统</p>
+						</div>
+						<div class="item">
+							<img src="img/icon9.png" alt="">
+							<p>聊天直播及媒体平台</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="part part3">
+				<div class="w950">
+					<div class="title">
+						<i class="dot-l"></i>
+						<span>我们的产品方案</span>
+						<i class="dot-r"></i>
+					</div>
+					<div class="schemelist">
+						<div class="item">
+							<div class="imgbox">
+								<img src="img/demo/1.png">
 							</div>
-							<div>服务范围</div>
+							<p>物联网应用系统</p>
+						</div>
+						<div class="item">
+							<div class="imgbox">
+								<img src="img/demo/1.png">
+							</div>
+							<p>物联网应用系统</p>
+						</div>
+						<div class="item">
+							<div class="imgbox">
+								<img src="img/demo/1.png">
+							</div>
+							<p>物联网应用系统</p>
+						</div>
+						<div class="item">
+							<div class="imgbox">
+								<img src="img/demo/1.png">
+							</div>
+							<p>物联网应用系统</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="part part4">
+				<div class="w950">
+					<div class="title white-title">
+						<i class="dot-l"></i>
+						<span>我们怎么做?</span>
+						<i class="dot-r"></i>
+					</div>
+					<div class="step imgbox">
+						<img src="img/step.png">
+					</div>
+				</div>
+
+			</section>
+			<section class="part part6 bg-grey casebox">
+				<div class="w950">
+					<div class="casetitle">项目案例</div>
+					<div class="tab">
+						<div class="tab-hd">
+							<a href="javascript:;" class="active">web系统</a>
+							<a href="javascript:;">移动APP</a>
+							<a href="javascript:;">3D相关</a>
+						</div>
+					</div>
+					<div>
+						<div id="certify">
+							<i class="dot-t"></i>
+							<i class="dot-b"></i>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<p>警安通</p>
+										<img src="img/demo/1.jpg" />
+									</div>
+									<div class="swiper-slide">
+										<p>警安通</p>
+										<img src="img/demo/1.jpg" />
+									</div>
+									<div class="swiper-slide">
+										<p>警安通</p>
+										<img src="img/demo/1.jpg" />
+									</div>
+									<div class="swiper-slide">
+										<p>警安通</p>
+										<img src="img/demo/1.jpg" />
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
 						</div>
 					</div>
 				</div>
 
-			</div>
-		</section>
-		<!-- 我们能做什么 -->
-		<section class="part part2 bg-grey">
-			<div class="w950">
-				<div class="title">
-					<i class="dot-l"></i>
-					<span>我们能做什么?</span>
-					<i class="dot-r"></i>
-				</div>
-				<div class="category clearfix">
-					<i class="line1"></i>
-					<i class="line2"></i>
-					<i class="line3"></i>
-					<i class="line4"></i>
-					<div class="item">
-						<img src="img/icon1.png" alt="">
-						<p>医护智能语音系统</p>
-					</div>
-					<div class="item">
-						<img src="img/icon2.png" alt="">
-						<p>企业IM系统</p>
-					</div>
-					<div class="item">
-						<img src="img/icon3.png" alt="">
-						<p>电子政务系统</p>
-					</div>
-					<div class="item">
-						<img src="img/icon4.png" alt="">
-						<p>电信业务系统</p>
-					</div>
-					<div class="item">
-						<img src="img/icon5.png" alt="">
-						<p>旅游行业订取票系统</p>
-					</div>
-					<div class="item">
-						<img src="img/icon6.png" alt="">
-						<p>保险理赔系统</p>
-					</div>
-					<div class="item">
-						<img src="img/icon7.png" alt="">
-						<p>社区系统</p>
-					</div>
-					<div class="item">
-						<img src="img/icon8.png" alt="">
-						<p>房产行业售房系统</p>
-					</div>
-					<div class="item">
-						<img src="img/icon9.png" alt="">
-						<p>聊天直播及媒体平台</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="part part3">
-			<div class="w950">
-				<div class="title">
-					<i class="dot-l"></i>
-					<span>我们的产品方案</span>
-					<i class="dot-r"></i>
-				</div>
-				<div class="schemelist">
-					<div class="item">
-						<div class="imgbox">
-							<img src="img/demo/1.png">
-						</div>
-						<p>物联网应用系统</p>
-					</div>
-					<div class="item">
-						<div class="imgbox">
-							<img src="img/demo/1.png">
-						</div>
-						<p>物联网应用系统</p>
-					</div>
-					<div class="item">
-						<div class="imgbox">
-							<img src="img/demo/1.png">
-						</div>
-						<p>物联网应用系统</p>
-					</div>
-					<div class="item">
-						<div class="imgbox">
-							<img src="img/demo/1.png">
-						</div>
-						<p>物联网应用系统</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="part part4">
-			<div class="w950">
-				<div class="title white-title">
-					<i class="dot-l"></i>
-					<span>我们怎么做?</span>
-					<i class="dot-r"></i>
-				</div>
-				<div class="step imgbox">
-					<img src="img/step.png">
-				</div>
-			</div>
-
-		</section>
-		<section class="part part6 bg-grey casebox">
-			<div class="w950">
-				<div class="casetitle">项目案例</div>
-				<div class="tab">
-					<div class="tab-hd">
-						<a href="javascript:;" class="active">web系统</a>
-						<a href="javascript:;">移动APP</a>
-						<a href="javascript:;">3D相关</a>
-					</div>
-				</div>
-				<div>
-					<div id="certify">
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<p>警安通</p>
-									<img src="img/demo/1.jpg" />
-								</div>
-								<div class="swiper-slide">
-									<p>警安通</p>
-									<img src="img/demo/1.jpg" />
-								</div>
-								<div class="swiper-slide">
-									<p>警安通</p>
-									<img src="img/demo/1.jpg" />
-								</div>
-								<div class="swiper-slide">
-									<p>警安通</p>
-									<img src="img/demo/1.jpg" />
-								</div>
-							</div>
-						</div>
-						<div class="swiper-pagination"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
-				</div>
-			</div>
-
-		</section>
+			</section>
+		</div>
 		<div class="footer">
 			<div class="w950">
 				<div class="title">联系我们</div>
@@ -225,6 +250,8 @@
 	</body>
 </html>
 <script src="js/swiper.min.js"></script>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/common.js"></script>
 <script>
 	var swiper = new Swiper('.banner.swiper-container', {
 		pagination: {
