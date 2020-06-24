@@ -211,7 +211,7 @@
 
 	.grid .content .txt {
 		font-size: .14rem;
-		line-height: .4rem;
+		line-height: .3rem;
 	}
 
 	.grid .content .content-ft {
@@ -286,6 +286,9 @@
 		font-size: .16rem;
 	}
 
+	.grid .content .scheme-part img {
+		margin-top: .35rem;
+	}
 
 }
 
