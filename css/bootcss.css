@@ -16,16 +16,14 @@
 		display: block;
 	}
 
-	.header,.header.index-header {
+	.header,
+	.header.index-header {
 		height: .8rem;
 		padding: 0 .3rem;
 	}
 
-	.header .w1210 {
-		padding: 0 .3rem;
-	}
-
-	.header~.main,.header.index-header~.main {
+	.header~.main,
+	.header.index-header~.main {
 		padding-top: .8rem;
 	}
 
@@ -123,10 +121,12 @@
 	}
 
 	.part3 .schemelist .item .imgbox {
-		margin-bottom: .45rem
+		margin-bottom: .45rem;
+		border-radius: .5rem;
 	}
 
-	.casetitle {
+	/* ***********首页-案列 ************/
+	.casebox .casetitle {
 		font-size: .3rem;
 	}
 
@@ -201,7 +201,59 @@
 
 	.footer .copyright {
 		font-size: .2rem;
-		margin-top: .8rem;
+		margin-top: .4rem;
+		padding: 0 .4rem;
+	}
+
+	.grid .content {
+		margin: .3rem .1rem;
+	}
+
+	.grid .content .txt {
+		font-size: .14rem;
+		line-height: .4rem;
+	}
+
+	.grid .content .content-ft {
+		padding: .8rem 0;
+	}
+
+	.grid .content .txt .title {
+		font-size: .24rem;
+	}
+
+	.grid .content .txt .title:before {
+		width: .08rem;
+		height: .26rem;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.grid .content .content-hd {
+		line-height: .6rem;
+		font-size: .16rem;
+		position: relative;
+		padding-left: .45rem;
+	}
+
+	.grid .content .content-hd:before {
+		height: .6rem;
+		width: .45rem;
+		background-size: .14rem auto;
+	}
+
+	.backhome {
+		color: #fff;
+		font-size: .18rem;
+		display: block;
+		width: 1.27rem;
+		line-height: .4rem;
+	}
+
+	/* ***********业务范围*********** */
+	.service-part {
+		padding: .45rem .45rem 0;
+
 	}
 
 	.servicelist {
@@ -215,9 +267,6 @@
 		padding: .15rem .1rem;
 	}
 
-	.grid .content {
-		margin: .3rem;
-	}
 
 	.team {
 		font-size: .18rem;
@@ -228,22 +277,16 @@
 		padding: .6rem 0
 	}
 
-	.service-part {
-		padding: .45rem .75rem 0;
-
+	/* ***********解决方案*********** */
+	.grid .content .scheme-part {
+		padding: .5rem .7rem 0;
 	}
 
-	.grid .content .content-ft {
-		padding: .8rem 0;
+	.grid .content .scheme-part .txt {
+		font-size: .16rem;
 	}
 
-	.backhome {
-		color: #fff;
-		font-size: .18rem;
-		display: block;
-		width: 1.27rem;
-		line-height: .4rem;
-	}
+
 }
 
 @media screen and (min-width: 768px) {}
@@ -253,11 +296,23 @@
 		padding-bottom: 28px;
 	}
 
+
+}
+
+@media screen and (min-width:1210px) {
+	.header .w1210 {
+		padding-left: 134px;
+	}
+
 	.about-part1 {
 		display: flex;
 		padding: 40px 70px;
 		align-items: center;
 
+	}
+
+	.about-part1 img {
+		width: 346px;
 	}
 
 	.about-part1 .txt {
@@ -286,10 +341,12 @@
 		position: absolute;
 		left: 70px;
 		top: 80px;
-		border-top: 1px solid #4694f7;
+		margin-top: 0;
+
 	}
 
 	.about-part2 .txt p+p {
 		margin-top: 24px;
 	}
+
 }

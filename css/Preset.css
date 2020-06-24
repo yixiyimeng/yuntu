@@ -103,3 +103,8 @@ a:active{
 .clearfix {
 	zoom: 1;
 }
+.text-cur{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

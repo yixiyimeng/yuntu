@@ -21,6 +21,7 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
+	padding: 0 10px;
 }
 
 .bg-grey {
@@ -101,9 +102,6 @@ html {
 	background-size: 100% auto;
 }
 
-.header .w1210 {
-	padding-left: 134px;
-}
 
 .navbar {
 	position: fixed;
@@ -134,7 +132,7 @@ html {
 }
 
 .navbar li a.active {
-	color: #F4A409;
+	color: #4694f7;
 }
 
 .logo {}
@@ -338,6 +336,11 @@ html {
 	padding: 50px 0;
 }
 
+.part2 .category .item p {
+	height: 2em;
+	padding: 0 10px;
+}
+
 .part2 .category i.line1,
 .part2 .category i.line2 {
 	top: 0;
@@ -495,8 +498,8 @@ html {
 	bottom: 40px;
 	right: 120px;
 }
-
-.casetitle {
+/* ***********首页-案列 ************/
+.casebox .casetitle {
 	font-size: 30px;
 	color: #666;
 	text-align: center;
@@ -692,6 +695,7 @@ html {
 	height: 60px;
 	width: 45px;
 	background: url(../img/arrow2.png) no-repeat center center;
+	background-size: 14px auto;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -818,6 +822,7 @@ html {
 	top: 0;
 	bottom: 0;
 }
+
 .team .line2 {
 	display: block;
 	height: 1px;
@@ -826,4 +831,94 @@ html {
 	background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35) 25%, rgba(255, 255, 255, 0.35) 75%, transparent);
 	left: 0;
 	right: 0;
+}
+
+.case-part {
+	margin: 0 12px;
+}
+
+.case-part .item {
+	float: left;
+	width: 25%;
+	font-size: 18px;
+	color: #5a5a5a;
+	padding: 15px 8px;
+}
+
+.case-part .item>div {
+	background: #f7f7f7;
+	padding-bottom: 20px;
+}
+
+.case-part .item p {
+	padding: 20px 15px 15px;
+}
+
+.case-part .item .arrow {
+	height: 30px;
+	width: 30px;
+	background: url(../img/arrow.jpg) no-repeat center center;
+	background-size: contain;
+	margin-left: 15px;
+}
+
+.pagination {
+	margin: 20px;
+	position: relative;
+}
+
+.pagination a {
+	height: 22px;
+	border: 1px solid #d5d5d5;
+	width: 22px;
+	text-align: center;
+	color: #d5d5d5;
+	background: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.pagination a.active {
+	color: #0056a8;
+	border-color: #0056a8;
+}
+
+.pagination:before,
+.pagination:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 1px;
+	background: #d5d5d5;
+	top: 50%;
+}
+
+.pagination:before {
+	left: 0;
+	width: calc(50% - 16px);
+}
+
+.pagination:after {
+	right: 0;
+	width: calc(50% - 16px);
+}
+
+.about-part1 {
+	padding: .4rem .7rem;
+}
+
+.about-part1 img,
+.about-part2 img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.about-part2 {
+	padding: 0 .7rem .4rem;
+}
+
+.about-part2 .txt {
+	border-top: 1px solid #4694f7;
+	margin-top: .2rem;
 }
