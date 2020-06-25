@@ -71,13 +71,21 @@ html {
 	height: 100%;
 }
 
+.header .menu {
+	height: 100%;
+}
+
 .header .menu a {
 	color: #fff;
 	font-size: 24px;
-	height: 80px;
+	height: 100%;
 	display: inline-block;
-	line-height: 80px;
+	line-height: 68px;
 	position: relative;
+}
+
+.header.index-header .menu a {
+	line-height: 80px;
 }
 
 .header .menu a+a {
@@ -498,6 +506,7 @@ html {
 	bottom: 40px;
 	right: 120px;
 }
+
 /* ***********首页-案列 ************/
 .casebox .casetitle {
 	font-size: 30px;
@@ -602,7 +611,7 @@ html {
 }
 
 .pageview {
-	background: url(../img/bg2.jpg) no-repeat center 68px;
+	background: url(../img/bg2.jpg) no-repeat center 67px;
 	background-size: cover;
 }
 
@@ -678,6 +687,7 @@ html {
 .grid .content {
 	background: #fff;
 	margin-left: 35px;
+	max-width: 100%;
 }
 
 .grid .content .content-hd {
@@ -921,4 +931,33 @@ html {
 .about-part2 .txt {
 	border-top: 1px solid #4694f7;
 	margin-top: .2rem;
+}
+
+.tabmenu {
+	margin: .2rem .2rem 0;
+}
+
+.tabmenu>ul {
+	white-space: nowrap;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	height: .6rem;
+}
+
+.tabmenu li a {
+	color: #fff;
+	font-size: .24rem;
+	line-height: .5rem;
+	height: .5rem;
+	padding: 0 .2rem;
+	display: block;
+}
+
+.tabmenu li.active a {
+	background: #2895e6;
+	border-radius: 50px;
+}
+
+.tabmenu li+li {
+	margin-left: .2rem;
 }

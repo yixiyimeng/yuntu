@@ -90,6 +90,9 @@ a:active{
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
+.flex-wrap {
+	flex-wrap: wrap;
+}
 
 .clearfix:after {
 	visibility: hidden;

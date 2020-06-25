@@ -290,6 +290,25 @@
 		margin-top: .35rem;
 	}
 
+	/* 案例 */
+	.case-part{
+		margin: 0 .12rem;
+	}
+	.case-part .item {
+		width: 50%;
+		font-size: 12px;
+		padding: .15rem 0.08rem;
+	}
+
+	.case-part .item .arrow {
+		height: .3rem;
+		width: .3rem;
+	}
+
+	.case-part .item p {
+		padding: .2rem .15rem .15rem;
+	}
+
 }
 
 @media screen and (min-width: 768px) {}
