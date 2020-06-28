@@ -239,7 +239,7 @@
 	.grid .content .content-hd:before {
 		height: .6rem;
 		width: .45rem;
-		background-size: .14rem auto;
+		background-size: .28rem auto;
 	}
 
 	.backhome {
@@ -279,7 +279,7 @@
 
 	/* ***********解决方案*********** */
 	.grid .content .scheme-part {
-		padding: .5rem .7rem 0;
+		padding: .5rem .4rem 0;
 	}
 
 	.grid .content .scheme-part .txt {
@@ -291,9 +291,10 @@
 	}
 
 	/* 案例 */
-	.case-part{
+	.case-part {
 		margin: 0 .12rem;
 	}
+
 	.case-part .item {
 		width: 50%;
 		font-size: 12px;
@@ -301,14 +302,31 @@
 	}
 
 	.case-part .item .arrow {
-		height: .3rem;
-		width: .3rem;
+		height: .5rem;
+		width: .5rem;
+		margin-left: .15rem;
 	}
 
 	.case-part .item p {
 		padding: .2rem .15rem .15rem;
 	}
 
+	.bread {
+		font-size: 12px;
+		line-height: .55rem;
+		height: .55rem;
+		margin-top: .2rem;
+	}
+
+	.bread .arrow {
+		height: 12px;
+		width: 12px;
+		background-size: 100% auto;
+		margin-top: -3px;
+	}
+	.navbar{
+		display: block;
+	}
 }
 
 @media screen and (min-width: 768px) {}

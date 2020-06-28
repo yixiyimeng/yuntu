@@ -113,14 +113,25 @@ html {
 
 .navbar {
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: .8rem;
+	/* left: 0; */
 	right: 0;
 	background: #fff;
-	bottom: 0;
-	z-index: 99999;
-	padding-top: 40px;
+	/* bottom: 0; */
+	z-index: 999;
+	/* padding-top: 40px; */
 	display: none;
+	width: 110px;
+	text-align: center;
+	height: auto;
+	box-shadow: 0 0 2px rgba(0,0,0,.2);
+	transition: all .3s;
+	overflow: hidden;
+	max-height: 0;
+}
+
+.navbar.open {
+	max-height: 999px;
 }
 
 .navbar .close {
@@ -129,14 +140,15 @@ html {
 	color: #333;
 	right: 20px;
 	top: 10px;
+	display: none;
 }
 
 .navbar li a {
 	display: block;
 	line-height: 40px;
-	border-bottom: 1px solid #ddd;
-	padding-left: 20px;
-	font-size: 16px;
+	/* border-bottom: 1px solid #ddd; */
+	/* padding-left: 20px; */
+	font-size: 13px;
 }
 
 .navbar li a.active {
@@ -620,9 +632,12 @@ html {
 	background: #fff;
 }
 
+.submenu>ul>li {
+	border-bottom: 1px dashed #d7d7d7;
+}
+
 .submenu>ul>li>a {
 	line-height: 60px;
-	border-bottom: 1px dashed #d7d7d7;
 	display: block;
 	padding-left: 60px;
 	font-size: 18px;
@@ -665,12 +680,15 @@ html {
 }
 
 .submenu>ul>li .sub {
-	padding: 15px 0;
-	display: none;
+	box-sizing: border-box;
+	height: 0;
+	overflow: hidden;
+	transition: all .3s;
 }
 
 .submenu>ul>li.open .sub {
-	display: block;
+	height: auto;
+	padding: 15px 0;
 }
 
 .submenu>ul>li .sub a {
@@ -680,7 +698,8 @@ html {
 	line-height: 30px;
 }
 
-.submenu>ul>li .sub .active a {
+.submenu>ul>li .sub .active a,
+.submenu>ul>li .sub li:hover a {
 	color: #4694f7;
 }
 
